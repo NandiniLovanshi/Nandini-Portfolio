@@ -37,26 +37,7 @@ function Home() {
   applications with clean code and attractive UI designs.
 </p>
 
-          <div className="flex gap-5">
-
-            {/* Hire Me Button */}
-            <a
-              href="#contact"
-              className="bg-cyan-500 hover:bg-cyan-600 px-6 py-3 rounded-lg font-semibold duration-300"
-            >
-              Hire Me
-            </a>
-
-            {/* Download CV */}
-            <a
-              href="/Nandini_Lovanshi_Resume.pdf"
-              download="Nandini_Lovanshi_Resume.pdf"
-              className="border-2 border-cyan-500 hover:bg-cyan-500 hover:text-white px-6 py-3 rounded-lg font-semibold duration-300"
-            >
-              Download CV
-            </a>
-
-          </div>
+          
 
         </div>
 
