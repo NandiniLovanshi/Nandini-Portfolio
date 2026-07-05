@@ -29,15 +29,16 @@ function Education() {
   return (
     <section
       id="education"
-      className="min-h-screen bg-slate-950 text-white py-20 px-8"
+      className="min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-white py-20 px-8 transition-all duration-500"
     >
       <div className="max-w-5xl mx-auto">
 
         {/* Heading */}
-        
-
-        <h2 className="text-2xl font-bold text-center mt-2 mb-16">
-          Educational <span className="text-cyan-400">Qualification</span>
+        <h2 className="text-4xl font-bold text-center mb-16">
+          Educational{" "}
+          <span className="text-cyan-500 dark:text-cyan-400">
+            Qualification
+          </span>
         </h2>
 
         {/* Timeline */}
@@ -47,25 +48,28 @@ function Education() {
             <div key={index} className="relative mb-10 ml-8">
 
               {/* Timeline Dot */}
-              <div className="absolute -left-[46px] top-8 w-5 h-5 bg-cyan-400 rounded-full border-4 border-slate-950"></div>
+              <div className="absolute -left-[46px] top-8 w-5 h-5 bg-cyan-400 rounded-full border-4 border-white dark:border-slate-950"></div>
 
               {/* Card */}
-              <div className="relative bg-slate-800 rounded-2xl p-8 shadow-lg hover:shadow-cyan-500/40 hover:scale-[1.02] transition-all duration-300">
+              <div className="relative bg-gray-100 dark:bg-slate-800 border border-cyan-400 rounded-2xl p-8 shadow-lg hover:shadow-cyan-500/40 hover:scale-[1.02] transition-all duration-300">
 
                 {/* Year Badge */}
                 <span className="absolute top-5 right-5 bg-cyan-500 text-white px-4 py-1 rounded-full text-sm font-semibold">
                   🎓 {item.year}
                 </span>
 
-                <h3 className="text-xl font-bold text-cyan-400 mb-3">
+                {/* Degree */}
+                <h3 className="text-xl font-bold text-cyan-500 dark:text-cyan-400 mb-3">
                   {item.degree}
                 </h3>
 
-                <h4 className="text-[20px] font-semibold mb-2">
+                {/* Institute */}
+                <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-2">
                   {item.institute}
                 </h4>
 
-                <p className="text-gray-300 text-lg">
+                {/* Score */}
+                <p className="text-gray-700 dark:text-gray-300 text-lg">
                   {item.score}
                 </p>
 

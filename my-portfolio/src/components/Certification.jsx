@@ -23,15 +23,15 @@ function Certification() {
   return (
     <section
       id="certification"
-      className="min-h-screen bg-slate-900 text-white py-20 px-8"
+      className="min-h-screen bg-white dark:bg-slate-900 text-slate-900 dark:text-white py-20 px-8 transition-all duration-500"
     >
       <div className="max-w-6xl mx-auto">
 
         {/* Heading */}
-        
-
-        <h2 className="text-2xl font-bold text-center mt-2 mb-16">
-        <span className="text-cyan-400">Certifications</span>
+        <h2 className="text-4xl font-bold text-center mb-16">
+          <span className="text-cyan-500 dark:text-cyan-400">
+            Certifications
+          </span>
         </h2>
 
         {/* Cards */}
@@ -40,19 +40,18 @@ function Certification() {
           {certificates.map((certificate, index) => (
             <div
               key={index}
-              className="bg-slate-800 rounded-2xl p-7 border border-cyan-500 hover:scale-105 hover:shadow-[0_0_25px_#06b6d4] transition-all duration-300"
+              className="bg-gray-100 dark:bg-slate-800 border border-cyan-400 rounded-2xl p-7 shadow-lg hover:shadow-cyan-500/40 hover:scale-105 transition-all duration-300"
             >
-              
 
-              <h3 className="text-xl font-bold text-cyan-400 mb-3">
+              <h3 className="text-xl font-bold text-cyan-500 dark:text-cyan-400 mb-3">
                 {certificate.title}
               </h3>
 
-              <h4 className="text-xl font-semibold text-white mb-4">
+              <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-4">
                 {certificate.organization}
               </h4>
 
-              <p className="text-gray-300 leading-7">
+              <p className="text-gray-700 dark:text-gray-300 leading-7">
                 {certificate.description}
               </p>
 
