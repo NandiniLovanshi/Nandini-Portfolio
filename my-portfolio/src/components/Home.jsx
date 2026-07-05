@@ -27,7 +27,7 @@ function Home() {
           </h1>
 
           <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-cyan-500 dark:text-cyan-400 mb-6">
-            Frontend Developer | React Developer
+          Frontend Developer | React Developer | MERN Stack Developer
           </h2>
 
           <p className="text-gray-700 dark:text-gray-300 text-base sm:text-lg leading-8 mb-8 transition-all duration-500">

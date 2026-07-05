@@ -19,27 +19,27 @@ function About() {
         </h2>
 
         {/* Introduction */}
-        <p className="text-gray-700 dark:text-gray-300 text-base sm:text-lg md:text-xl leading-8 sm:leading-9 md:leading-10 text-center max-w-4xl mx-auto transition-all duration-500">
-          Hello! I'm{" "}
-          <span className="text-cyan-500 dark:text-cyan-400 font-bold">
-            Nandini Lovanshi
-          </span>
-          , a passionate{" "}
-          <span className="text-cyan-500 dark:text-cyan-400 font-semibold">
-            Frontend & React Developer
-          </span>{" "}
-          dedicated to building modern, responsive, and user-friendly web
-          applications. I enjoy transforming creative ideas into interactive
-          digital experiences using{" "}
-          <span className="text-cyan-500 dark:text-cyan-400 font-semibold">
-            HTML, CSS, JavaScript, React.js, Tailwind CSS, Node.js,
-            Express.js, MongoDB, and REST APIs
-          </span>
-          . I continuously explore new technologies, write clean and
-          maintainable code, and focus on creating fast, visually appealing,
-          and intuitive web applications that deliver an excellent user
-          experience.
-        </p>
+<p className="text-gray-700 dark:text-gray-300 text-base sm:text-lg md:text-xl leading-8 sm:leading-9 md:leading-10 text-center max-w-4xl mx-auto transition-all duration-500">
+  Hello! I'm{" "}
+  <span className="text-cyan-500 dark:text-cyan-400 font-bold">
+    Nandini Lovanshi
+  </span>
+  , a passionate{" "}
+  <span className="text-cyan-500 dark:text-cyan-400 font-semibold">
+    Frontend, React & MERN Stack Developer
+  </span>{" "}
+  with a strong interest in building modern, responsive, and user-friendly web
+  applications. I enjoy turning creative ideas into interactive digital
+  experiences using{" "}
+  <span className="text-cyan-500 dark:text-cyan-400 font-semibold">
+    HTML, CSS, JavaScript, React.js, Tailwind CSS, Node.js, Express.js,
+    MongoDB, and REST APIs
+  </span>
+  . I focus on writing clean, scalable, and maintainable code while developing
+  fast, visually appealing, and high-performance applications. I am always
+  eager to learn emerging technologies, solve real-world problems, and
+  continuously enhance my skills to create impactful digital solutions.
+</p>
 
       </div>
     </section>
