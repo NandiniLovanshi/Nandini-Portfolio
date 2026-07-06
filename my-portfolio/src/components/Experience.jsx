@@ -7,7 +7,7 @@ function Experience() {
       <div className="max-w-5xl mx-auto">
 
         {/* Heading */}
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-14 md:mb-16">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-14 md:mb-16">
           Work{" "}
           <span className="text-cyan-500 dark:text-cyan-400">
             Experience

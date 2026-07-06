@@ -25,7 +25,7 @@ function Projects() {
       <div className="max-w-7xl mx-auto">
 
         {/* Heading */}
-        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12">
+        <h2 className="text-2xl sm:text-3xl font-bold text-center mb-12">
           My <span className="text-cyan-500 dark:text-cyan-400">Projects</span>
         </h2>
 

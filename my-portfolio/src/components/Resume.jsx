@@ -7,7 +7,7 @@ function Resume() {
       <div className="max-w-4xl w-full text-center">
 
         {/* Heading */}
-        <h2 className="text-4xl font-bold mb-8">
+        <h2 className="text-3xl font-bold mb-8">
           My <span className="text-cyan-500 dark:text-cyan-400">Resume</span>
         </h2>
 

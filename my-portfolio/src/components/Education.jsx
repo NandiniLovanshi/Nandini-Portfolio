@@ -34,7 +34,7 @@ function Education() {
       <div className="max-w-5xl mx-auto">
 
         {/* Heading */}
-        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 md:mb-16">
+        <h2 className="text-2xl sm:text-3xl font-bold text-center mb-12 md:mb-16">
           Educational{" "}
           <span className="text-cyan-500 dark:text-cyan-400">
             Qualification

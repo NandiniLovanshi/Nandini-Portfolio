@@ -22,19 +22,16 @@ function Home() {
             Hello, I'm
           </p>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+          <h1 className="text-2xl sm:text-2xl md:text-4xl lg:text-6xl font-bold mb-4">
             Nandini Lovanshi
           </h1>
 
           <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-cyan-500 dark:text-cyan-400 mb-6">
-          Frontend Developer | React Developer | MERN Stack Developer
+          Frontend Developer | React Developer
           </h2>
 
           <p className="text-gray-700 dark:text-gray-300 text-base sm:text-lg leading-8 mb-8 transition-all duration-500">
-            I am a passionate Frontend and React Developer who enjoys
-            creating responsive, modern, and user-friendly websites.
-            I love transforming creative ideas into interactive web
-            applications with clean code and attractive UI designs.
+            Passionate Frontend & React Developer with hands-on experience in building responsive and scalable web applications using React.js, Tailwind CSS, Node.js, Express.js, and MongoDB. I enjoy creating clean, user-friendly interfaces and solving real-world problems through code.
           </p>
 
           
