@@ -28,7 +28,7 @@ function Resume() {
           </h3>
 
           <p className="text-gray-700 dark:text-gray-300 mb-8 text-lg">
-            Frontend Developer | React Developer | MERN Stack Developer
+            Frontend Developer | React Developer
           </p>
 
           {/* Buttons */}

@@ -26,7 +26,7 @@ function About() {
   </span>
   , a passionate{" "}
   <span className="text-cyan-500 dark:text-cyan-400 font-semibold">
-    Frontend, React & MERN Stack Developer
+    Frontend, React Developer
   </span>{" "}
   with a strong interest in building modern, responsive, and user-friendly web
   applications. I enjoy turning creative ideas into interactive digital
