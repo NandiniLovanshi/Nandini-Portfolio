@@ -1,3 +1,6 @@
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+
 import {
   FaPhoneAlt,
   FaEnvelope,
@@ -6,6 +9,30 @@ import {
 } from "react-icons/fa";
 
 function Contact() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_nandini",
+        "template_4n53hcj",
+        form.current,
+        "sdi3lYRMrMAMpUkH4"
+      )
+      .then(
+        () => {
+          alert("Message Sent Successfully ✅");
+          form.current.reset();
+        },
+        (error) => {
+          alert("Failed to send message ❌");
+          console.log(error);
+        }
+      );
+  };
+
   return (
     <section
       id="contact"
@@ -24,31 +51,44 @@ function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14">
 
           {/* Contact Form */}
-          <div className="bg-gray-100 dark:bg-slate-800 p-6 sm:p-8 rounded-2xl border border-cyan-400 shadow-lg transition-all duration-500">
+          <form
+            ref={form}
+            onSubmit={sendEmail}
+            className="bg-gray-100 dark:bg-slate-800 p-6 sm:p-8 rounded-2xl border border-cyan-400 shadow-lg transition-all duration-500"
+          >
 
             <input
               type="text"
+              name="name"
               placeholder="Your Name"
+              required
               className="w-full p-3 sm:p-4 mb-5 rounded-lg bg-white dark:bg-slate-700 text-slate-900 dark:text-white outline-none border border-gray-300 dark:border-slate-600 focus:border-cyan-400 transition"
             />
 
             <input
               type="email"
+              name="email"
               placeholder="Your Email"
+              required
               className="w-full p-3 sm:p-4 mb-5 rounded-lg bg-white dark:bg-slate-700 text-slate-900 dark:text-white outline-none border border-gray-300 dark:border-slate-600 focus:border-cyan-400 transition"
             />
 
             <textarea
               rows="6"
+              name="message"
               placeholder="Your Message"
+              required
               className="w-full p-3 sm:p-4 mb-6 rounded-lg bg-white dark:bg-slate-700 text-slate-900 dark:text-white outline-none border border-gray-300 dark:border-slate-600 focus:border-cyan-400 resize-none transition"
             ></textarea>
 
-            <button className="w-full bg-cyan-500 hover:bg-cyan-600 text-white py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-300">
+            <button
+              type="submit"
+              className="w-full bg-cyan-500 hover:bg-cyan-600 text-white py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-300"
+            >
               Send Message
             </button>
 
-          </div>
+          </form>
 
           {/* Contact Info */}
           <div className="flex flex-col justify-center">
@@ -83,9 +123,7 @@ function Contact() {
                   <h4 className="font-semibold text-lg">Email</h4>
 
                   <a
-                    href="https://mail.google.com/mail/?view=cm&fs=1&to=lovanshinandini42@gmail.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="mailto:lovanshinandini42@gmail.com"
                     className="text-sm sm:text-base text-gray-700 dark:text-gray-300 hover:text-cyan-500 transition duration-300 break-all"
                   >
                     lovanshinandini42@gmail.com
