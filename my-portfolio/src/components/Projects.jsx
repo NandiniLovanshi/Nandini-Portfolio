@@ -1,30 +1,36 @@
 function Projects() {
   const projects = [
-    {
-      title: "Personal Portfolio Website",
-      image: "/portfolio.png", // public folder me image rakho
-      description:
-        "A modern, fully responsive personal portfolio website developed using React.js and Tailwind CSS with Dark/Light Mode, smooth navigation, responsive design, resume download, contact section, and professional UI.",
-      technologies: [
-        "React.js",
-        "Tailwind CSS",
-        "JavaScript",
-        "HTML5",
-        "CSS3",
-      ],
-      github: "https://github.com/NandiniLovanshi/Nandini-Portfolio",
-      live: "nandini-portfolio-omega.vercel.app",
-    },
-    {
-      title: "E-commerce Website",
-      image: "/Myntra.png", 
-      description:
-        "A responsive e-commerce website built with React.js, Tailwind CSS, and Firebase for authentication, database, and storage.",
-      technologies: ["React.js", "Tailwind CSS", "JavaScript", "HTML5", "CSS3"],
-      github: "https://github.com/NandiniLovanshi/Myntra-Clone",
-      live: "myntra-clone-taupe-rho.vercel.app",
-    },
-  ];
+  {
+    title: "Personal Portfolio Website",
+    image: "/portfolio.png",
+    description:
+      "A modern, fully responsive personal portfolio website developed using React.js and Tailwind CSS with Dark/Light Mode, smooth navigation, responsive design, resume download, contact section, and professional UI.",
+    technologies: [
+      "React.js",
+      "Tailwind CSS",
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+    ],
+    github: "https://github.com/NandiniLovanshi/Nandini-Portfolio",
+    live: "https://nandini-portfolio-omega.vercel.app",
+  },
+  {
+    title: "E-commerce Website",
+    image: "/Myntra.png",
+    description:
+      "A responsive e-commerce website built with React.js, Tailwind CSS, and Firebase for authentication, database, and storage.",
+    technologies: [
+      "React.js",
+      "Tailwind CSS",
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+    ],
+    github: "https://github.com/NandiniLovanshi/Myntra-Clone",
+    live: "https://myntra-clone-taupe-rho.vercel.app",
+  },
+];
 
   return (
     <section
