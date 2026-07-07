@@ -13,7 +13,7 @@ function Projects() {
         "CSS3",
       ],
       github: "https://github.com/NandiniLovanshi/Nandini-Portfolio",
-      live: "https://your-vercel-link.vercel.app",
+      live: "nandini-portfolio-omega.vercel.app",
     },
     {
       title: "E-commerce Website",
@@ -22,7 +22,7 @@ function Projects() {
         "A responsive e-commerce website built with React.js, Tailwind CSS, and Firebase for authentication, database, and storage.",
       technologies: ["React.js", "Tailwind CSS", "JavaScript", "HTML5", "CSS3"],
       github: "https://github.com/NandiniLovanshi/Myntra-Clone",
-      live: "https://your-vercel-link.vercel.app",
+      live: "myntra-clone-taupe-rho.vercel.app",
     },
   ];
 
