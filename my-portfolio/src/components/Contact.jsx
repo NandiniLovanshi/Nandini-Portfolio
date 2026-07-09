@@ -1,14 +1,14 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
-
 import {
-  FaPhoneAlt,
   FaEnvelope,
-  FaLinkedin,
+  FaPhoneAlt,
+  FaMapMarkerAlt,
   FaGithub,
+  FaLinkedin,
 } from "react-icons/fa";
 
-function Contact() {
+const Contact = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -23,12 +23,12 @@ function Contact() {
       )
       .then(
         () => {
-          alert("Message Sent Successfully ✅");
+          alert("✅ Message sent successfully!");
           form.current.reset();
         },
         (error) => {
-          alert("Failed to send message ❌");
-          console.log(error);
+          console.error(error);
+          alert("❌ Failed to send message.");
         }
       );
   };
@@ -36,140 +36,155 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="min-h-screen bg-white dark:bg-slate-900 text-slate-900 dark:text-white py-16 md:py-20 px-4 sm:px-6 lg:px-8 transition-all duration-500"
+      className="py-24 bg-white dark:bg-slate-900 transition-all duration-300"
     >
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto px-6">
 
         {/* Heading */}
-        <h2 className="text-2xl sm:text-3xl font-bold text-center mb-10 md:mb-14">
-          Let's{" "}
-          <span className="text-cyan-500 dark:text-cyan-400">
-            Connect!!!
-          </span>
-        </h2>
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-black dark:text-white">
+            Contact <span className="text-pink-600">Me</span>
+          </h2>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14">
+          <p className="mt-4 text-gray-600 dark:text-gray-300">
+            Feel free to get in touch. I'm always open to discussing new
+            opportunities and exciting projects.
+          </p>
+        </div>
 
-          {/* Contact Form */}
-          <form
-            ref={form}
-            onSubmit={sendEmail}
-            className="bg-gray-100 dark:bg-slate-800 p-6 sm:p-8 rounded-2xl border border-cyan-400 shadow-lg transition-all duration-500"
-          >
+        {/* Two Column Layout */}
+        <div className="grid lg:grid-cols-2 gap-12">
 
-            <input
-              type="text"
-              name="name"
-              placeholder="Your Name"
-              required
-              className="w-full p-3 sm:p-4 mb-5 rounded-lg bg-white dark:bg-slate-700 text-slate-900 dark:text-white outline-none border border-gray-300 dark:border-slate-600 focus:border-cyan-400 transition"
-            />
+          {/* Left Side */}
+          <div>
 
-            <input
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              required
-              className="w-full p-3 sm:p-4 mb-5 rounded-lg bg-white dark:bg-slate-700 text-slate-900 dark:text-white outline-none border border-gray-300 dark:border-slate-600 focus:border-cyan-400 transition"
-            />
-
-            <textarea
-              rows="6"
-              name="message"
-              placeholder="Your Message"
-              required
-              className="w-full p-3 sm:p-4 mb-6 rounded-lg bg-white dark:bg-slate-700 text-slate-900 dark:text-white outline-none border border-gray-300 dark:border-slate-600 focus:border-cyan-400 resize-none transition"
-            ></textarea>
-
-            <button
-              type="submit"
-              className="w-full bg-cyan-500 hover:bg-cyan-600 text-white py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-300"
-            >
-              Send Message
-            </button>
-
-          </form>
-
-          {/* Contact Info */}
-          <div className="flex flex-col justify-center">
-
-            <h3 className="text-2xl sm:text-3xl font-bold mb-8">
-              You can also find me here
+            <h3 className="text-3xl font-bold text-black dark:text-white mb-8">
+              Let's Connect
             </h3>
 
-            <div className="space-y-6">
-
-              {/* Phone */}
-              <div className="flex items-center gap-4">
-                <div className="bg-cyan-500 p-3 sm:p-4 rounded-full text-white">
-                  <FaPhoneAlt size={20} />
-                </div>
-
-                <div>
-                  <h4 className="font-semibold text-lg">Phone</h4>
-                  <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300">
-                    +91 XXXXXXXXXX
-                  </p>
-                </div>
+            {/* Email */}
+            <div className="flex items-center gap-5 mb-6">
+              <div className="w-14 h-14 rounded-full bg-pink-600 flex items-center justify-center">
+                <FaEnvelope className="text-white text-xl" />
               </div>
 
-              {/* Email */}
-              <div className="flex items-center gap-4">
-                <div className="bg-cyan-500 p-3 sm:p-4 rounded-full text-white">
-                  <FaEnvelope size={20} />
-                </div>
+              <div>
+                <h4 className="font-semibold text-black dark:text-white">
+                  Email
+                </h4>
 
-                <div>
-                  <h4 className="font-semibold text-lg">Email</h4>
+                <a
+                  href="mailto:lovanshinandini42@gmail.com"
+                  className="text-gray-600 dark:text-gray-300 hover:text-pink-600"
+                >
+                  lovanshinandini42@gmail.com
+                </a>
+              </div>
+            </div>
 
-                  <a
-                    href="mailto:lovanshinandini42@gmail.com"
-                    className="text-sm sm:text-base text-gray-700 dark:text-gray-300 hover:text-cyan-500 transition duration-300 break-all"
-                  >
-                    lovanshinandini42@gmail.com
-                  </a>
-                </div>
+            {/* Phone */}
+            <div className="flex items-center gap-5 mb-6">
+              <div className="w-14 h-14 rounded-full bg-pink-600 flex items-center justify-center">
+                <FaPhoneAlt className="text-white text-xl" />
               </div>
 
-              {/* LinkedIn */}
-              <a
-                href="https://www.linkedin.com/in/your-linkedin-username/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-4 hover:text-cyan-500 transition duration-300"
-              >
-                <div className="bg-cyan-500 p-3 sm:p-4 rounded-full text-white">
-                  <FaLinkedin size={20} />
-                </div>
+              <div>
+                <h4 className="font-semibold text-black dark:text-white">
+                  Phone
+                </h4>
 
-                <div>
-                  <h4 className="font-semibold text-lg">LinkedIn</h4>
-                  <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300">
-                    Nandini Lovanshi
-                  </p>
-                </div>
-              </a>
+                <a
+                  href="tel:+916267643021"
+                  className="text-gray-600 dark:text-gray-300 hover:text-pink-600"
+                >
+                  +91 6267643021
+                </a>
+              </div>
+            </div>
 
-              {/* GitHub */}
+            {/* Location */}
+            <div className="flex items-center gap-5 mb-8">
+              <div className="w-14 h-14 rounded-full bg-pink-600 flex items-center justify-center">
+                <FaMapMarkerAlt className="text-white text-xl" />
+              </div>
+
+              <div>
+                <h4 className="font-semibold text-black dark:text-white">
+                  Location
+                </h4>
+
+                <p className="text-gray-600 dark:text-gray-300">
+                  Indore, Madhya Pradesh, India
+                </p>
+              </div>
+            </div>
+
+            {/* Social Icons */}
+            <div className="flex gap-5">
+
               <a
                 href="https://github.com/NandiniLovanshi"
                 target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-4 hover:text-cyan-500 transition duration-300"
+                rel="noreferrer"
+                className="w-14 h-14 rounded-full bg-gray-200 dark:bg-slate-700 flex items-center justify-center text-2xl text-black dark:text-white hover:bg-pink-600 hover:text-white transition duration-300"
               >
-                <div className="bg-cyan-500 p-3 sm:p-4 rounded-full text-white">
-                  <FaGithub size={20} />
-                </div>
+                <FaGithub />
+              </a>
 
-                <div>
-                  <h4 className="font-semibold text-lg">GitHub</h4>
-                  <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300 break-all">
-                    github.com/NandiniLovanshi
-                  </p>
-                </div>
+              <a
+                href="https://www.linkedin.com/in/nandini-lovanshi-301462366"
+                target="_blank"
+                rel="noreferrer"
+                className="w-14 h-14 rounded-full bg-gray-200 dark:bg-slate-700 flex items-center justify-center text-2xl text-black dark:text-white hover:bg-pink-600 hover:text-white transition duration-300"
+              >
+                <FaLinkedin />
               </a>
 
             </div>
+
+          </div>
+
+          {/* Right Side */}
+          <div className="bg-gray-100 dark:bg-slate-800 rounded-3xl p-8 shadow-lg">
+
+            <form
+              ref={form}
+              onSubmit={sendEmail}
+              className="space-y-6"
+            >
+
+              <input
+                type="text"
+                name="user_name"
+                placeholder="Your Name"
+                required
+                className="w-full p-4 rounded-xl bg-white dark:bg-slate-700 dark:text-white border border-gray-300 dark:border-slate-600 outline-none focus:border-pink-500"
+              />
+
+              <input
+                type="email"
+                name="user_email"
+                placeholder="Your Email"
+                required
+                className="w-full p-4 rounded-xl bg-white dark:bg-slate-700 dark:text-white border border-gray-300 dark:border-slate-600 outline-none focus:border-pink-500"
+              />
+
+              <textarea
+                rows="6"
+                name="message"
+                placeholder="Your Message"
+                required
+                className="w-full p-4 rounded-xl bg-white dark:bg-slate-700 dark:text-white border border-gray-300 dark:border-slate-600 outline-none focus:border-pink-500 resize-none"
+              ></textarea>
+
+              <button
+                type="submit"
+                className="bg-pink-600 hover:bg-pink-700 text-white px-8 py-3 rounded-full transition duration-300 hover:scale-105"
+              >
+                Send Message
+              </button>
+
+            </form>
 
           </div>
 
@@ -178,6 +193,6 @@ function Contact() {
       </div>
     </section>
   );
-}
+};
 
 export default Contact;

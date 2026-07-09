@@ -1,136 +1,97 @@
+
 import { useState, useEffect } from "react";
-import { FaMoon, FaSun, FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes, FaMoon, FaSun } from "react-icons/fa";
 
-function Navbar() {
-  const [darkMode, setDarkMode] = useState(() => {
-    return localStorage.getItem("theme") !== "light";
-  });
-
+const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
+
+  const navLinks = [
+    { name: "Home", href: "#home" },
+    { name: "About", href: "#about" },
+    { name: "Skills", href: "#skills" },
+    { name: "Projects", href: "#projects" },
+    { name: "Contact", href: "#contact" },
+  ];
 
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
     } else {
       document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
     }
   }, [darkMode]);
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-cyan-600 dark:bg-slate-900/90 backdrop-blur-lg shadow-xl z-50 transition-all duration-500">
-      <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-10 py-4">
+    <nav className="fixed top-0 left-0 w-full bg-white dark:bg-slate-900 text-black dark:text-white shadow-md z-50 transition-all duration-300">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="flex items-center justify-between h-16">
 
-        {/* Logo */}
-        <h1 className="text-2xl md:text-3xl font-extrabold text-white dark:text-cyan-400">
-          Nandini Lovanshi
-        </h1>
-
-        {/* Desktop Menu */}
-        <ul className="hidden lg:flex items-center gap-8 font-medium text-white">
-
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#education">Education</a></li>
-
-          <li>
-            <a
-              href="#contact"
-              className="px-5 py-2 rounded-full bg-white text-cyan-700 dark:bg-cyan-500 dark:text-white"
-            >
-              Contact
-            </a>
-          </li>
-
-        </ul>
-
-        {/* Right Side Buttons */}
-        <div className="flex items-center gap-3">
-
-          {/* Theme Toggle */}
-          <button
-            onClick={() => setDarkMode(!darkMode)}
-            className="w-11 h-11 rounded-full flex items-center justify-center bg-white dark:bg-slate-700 shadow-lg"
-          >
-            {darkMode ? (
-              <FaSun className="text-yellow-400 text-xl" />
-            ) : (
-              <FaMoon className="text-slate-900 text-xl" />
-            )}
-          </button>
-
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setMenuOpen(!menuOpen)}
-            className="lg:hidden text-white text-2xl"
-          >
-            {menuOpen ? <FaTimes /> : <FaBars />}
-          </button>
-
-        </div>
-      </nav>
-
-      {/* Mobile Menu */}
-      {menuOpen && (
-        <div className="lg:hidden bg-cyan-600 dark:bg-slate-900 px-6 pb-6">
-
-          <ul className="flex flex-col gap-5 text-white font-medium">
-
-            <li>
-              <a href="#home" onClick={() => setMenuOpen(false)}>
-                Home
-              </a>
-            </li>
-
-            <li>
-              <a href="#about" onClick={() => setMenuOpen(false)}>
-                About
-              </a>
-            </li>
-
-            <li>
-              <a href="#skills" onClick={() => setMenuOpen(false)}>
-                Skills
-              </a>
-            </li>
-
-            <li>
-              <a href="#projects" onClick={() => setMenuOpen(false)}>
-                Projects
-              </a>
-            </li>
-
-            <li>
-              <a href="#experience" onClick={() => setMenuOpen(false)}>
-                Experience
-              </a>
-            </li>
-
-            <li>
-              <a href="#education" onClick={() => setMenuOpen(false)}>
-                Education
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="#contact"
-                onClick={() => setMenuOpen(false)}
-                className="bg-white text-cyan-700 px-4 py-2 rounded-lg inline-block"
-              >
-                Contact
-              </a>
-            </li>
-
+          {/* Logo */}
+          <h1 className="text-2xl font-bold text-black dark:text-white transition-colors duration-300">
+  Portfolio
+</h1>
+          {/* Desktop Menu */}
+          <ul className="hidden md:flex items-center gap-8">
+            {navLinks.map((link) => (
+              <li key={link.name}>
+                <a
+                  href={link.href}
+                  className="inline-block hover:text-pink-600 hover:scale-110 hover:font-semibold transition-all duration-300 ease-in-out"
+                >
+                  {link.name}
+                </a>
+              </li>
+            ))}
           </ul>
+
+          {/* Right Side */}
+          <div className="flex items-center gap-4">
+
+            {/* Dark / Light Button */}
+            <button
+              onClick={() => setDarkMode(!darkMode)}
+              className="p-2 rounded-full bg-gray-200 dark:bg-slate-700 hover:scale-110 transition duration-300"
+            >
+              {darkMode ? (
+                <FaSun className="text-yellow-400 text-xl" />
+              ) : (
+                <FaMoon className="text-slate-800 text-xl" />
+              )}
+            </button>
+
+            {/* Mobile Menu */}
+            <button
+              className="md:hidden text-2xl"
+              onClick={() => setMenuOpen(!menuOpen)}
+            >
+              {menuOpen ? <FaTimes /> : <FaBars />}
+            </button>
+
+          </div>
         </div>
-      )}
-    </header>
+
+        {/* Mobile Menu */}
+        {menuOpen && (
+          <div className="md:hidden py-4">
+            <ul className="flex flex-col gap-4">
+              {navLinks.map((link) => (
+                <li key={link.name}>
+                  <a
+                    href={link.href}
+                    className="block hover:text-pink-600 hover:scale-105 hover:font-semibold transition-all duration-300 ease-in-out origin-left"
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+    </nav>
   );
-}
+};
 
 export default Navbar;

@@ -1,78 +1,95 @@
-function Education() {
-  const education = [
-    {
-      degree: "Master of Computer Application (MCA)",
-      institute: "Shri Dadaji Institute of Technology and Science, Khandwa",
-      score: "CGPA: 8.53",
-      year: "2026",
-    },
-    {
-      degree: "Bachelor of Computer Application (BCA)",
-      institute: "Government Holkar Science College, Indore",
-      score: "Percentage: 67.29%",
-      year: "2023",
-    },
-    {
-      degree: "Higher Secondary Education (12th)",
-      institute: "M.P. Board",
-      score: "Percentage: 85%",
-      year: "2020",
-    },
-    {
-      degree: "Secondary Education (10th)",
-      institute: "M.P. Board",
-      score: "Percentage: 82.2%",
-      year: "2018",
-    },
-  ];
+import { FaGraduationCap } from "react-icons/fa";
 
+const education = [
+  {
+    year: "2024 - 2026",
+    degree: "Master of Computer Applications (MCA)",
+    institute: "Rajiv Gandhi Proudyogiki Vishwavidyalaya (RGPV)",
+    score: "CGPA: 8.53",
+  },
+  {
+    year: "2020 - 2023",
+    degree: "Bachelor of Computer Applications (BCA)",
+    institute: "Devi Ahilya Vishwavidyalaya (DAVV)",
+    score: "Percentage: 67.29%",
+  },
+  {
+    year: "2019 - 2020",
+    degree: "Higher Secondary School (12th)",
+    institute: "M.P. Board",
+    score: "Percentage: 85%",
+  },
+  {
+    year: "2017 - 2018",
+    degree: "Secondary School (10th)",
+    institute: "M.P. Board",
+    score: "Percentage: 82.2%",
+  },
+];
+
+const Education = () => {
   return (
     <section
       id="education"
-      className="min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-white py-16 md:py-20 px-4 sm:px-6 lg:px-8 transition-all duration-500"
+      className="py-24 bg-gray-50 dark:bg-slate-950 transition-all duration-300"
     >
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-6xl mx-auto px-6">
 
         {/* Heading */}
-        <h2 className="text-2xl sm:text-3xl font-bold text-center mb-12 md:mb-16">
-          Educational{" "}
-          <span className="text-cyan-500 dark:text-cyan-400">
-            Qualification
-          </span>
-        </h2>
+        <div className="text-center">
+          <h2 className="text-4xl font-bold text-black dark:text-white">
+            My <span className="text-pink-600">Education</span>
+          </h2>
+
+          <p className="mt-4 text-gray-600 dark:text-gray-300">
+            My academic journey and achievements.
+          </p>
+        </div>
 
         {/* Timeline */}
-        <div className="relative border-l-4 border-cyan-400 ml-3 sm:ml-5">
+        <div className="relative mt-16">
+
+          {/* Center Line */}
+          <div className="hidden md:block absolute left-1/2 top-0 h-full w-1 bg-pink-500 -translate-x-1/2"></div>
 
           {education.map((item, index) => (
-            <div key={index} className="relative mb-8 sm:mb-10 ml-6 sm:ml-8">
-
-              {/* Timeline Dot */}
-              <div className="absolute -left-[33px] sm:-left-[46px] top-8 w-4 h-4 sm:w-5 sm:h-5 bg-cyan-400 rounded-full border-4 border-white dark:border-slate-950"></div>
+            <div
+              key={index}
+              className={`relative flex items-center mb-12 ${
+                index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+              } flex-col`}
+            >
 
               {/* Card */}
-              <div className="relative bg-gray-100 dark:bg-slate-800 border border-cyan-400 rounded-2xl p-5 sm:p-8 shadow-lg hover:shadow-cyan-500/40 hover:scale-[1.02] transition-all duration-300">
-
-                {/* Year Badge */}
-                <span className="absolute top-4 right-4 bg-cyan-500 text-white px-3 py-1 rounded-full text-xs sm:text-sm font-semibold">
-                  🎓 {item.year}
-                </span>
-
-                {/* Degree */}
-                <h3 className="text-lg sm:text-xl font-bold text-cyan-500 dark:text-cyan-400 mb-3 pr-20">
+              <div
+                className="w-full md:w-5/12 bg-white dark:bg-slate-800 rounded-2xl shadow-lg p-6
+                hover:-translate-y-2 hover:shadow-pink-500/40 hover:shadow-2xl
+                transition-all duration-500"
+              >
+                <h3 className="text-xl font-bold text-pink-600">
                   {item.degree}
                 </h3>
 
-                {/* Institute */}
-                <h4 className="text-base sm:text-lg font-semibold text-slate-900 dark:text-white mb-2">
+                <p className="mt-2 text-gray-700 dark:text-white">
                   {item.institute}
-                </h4>
+                </p>
 
-                {/* Score */}
-                <p className="text-sm sm:text-lg text-gray-700 dark:text-gray-300">
+                <p className="mt-2 text-gray-600 dark:text-gray-300">
                   {item.score}
                 </p>
 
+                <span className="inline-block mt-4 px-4 py-1 rounded-full bg-pink-100 text-pink-600 font-semibold">
+                  {item.year}
+                </span>
+              </div>
+
+              {/* Icon */}
+              <div
+                className="hidden md:flex absolute left-1/2 -translate-x-1/2
+                w-14 h-14 rounded-full bg-pink-600 items-center justify-center
+                shadow-lg"
+              >
+                <FaGraduationCap className="text-white text-2xl" />
               </div>
 
             </div>
@@ -83,6 +100,6 @@ function Education() {
       </div>
     </section>
   );
-}
+};
 
 export default Education;

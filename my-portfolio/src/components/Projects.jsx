@@ -1,80 +1,88 @@
-function Projects() {
-  const projects = [
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+
+const projects = [
+  
+
   {
-    title: "Personal Portfolio Website",
-    image: "/portfolio.png",
+    title: "Myntra Clone",
+    image: "/projects/myntra.png",
     description:
-      "A modern, fully responsive personal portfolio website developed using React.js and Tailwind CSS with Dark/Light Mode, smooth navigation, responsive design, resume download, contact section, and professional UI.",
+      "A responsive Myntra-inspired e-commerce frontend featuring category navigation, product listings, and modern UI.",
     technologies: [
       "React.js",
       "Tailwind CSS",
       "JavaScript",
-      "HTML5",
-      "CSS3",
     ],
-    github: "https://github.com/NandiniLovanshi/Nandini-Portfolio",
-    live: "https://nandini-portfolio-omega.vercel.app",
+    github: "https://github.com/NandiniLovanshi",
+    live: "#",
   },
+
   {
-    title: "E-commerce Website",
-    image: "/Myntra.png",
+    title: "Portfolio Website",
+    image: "/projects/portfolio.png",
     description:
-      "A responsive e-commerce website built with React.js, Tailwind CSS, and Firebase for authentication, database, and storage.",
+      "Personal portfolio showcasing my skills, education, experience, certifications and projects.",
     technologies: [
       "React.js",
       "Tailwind CSS",
-      "JavaScript",
-      "HTML5",
-      "CSS3",
     ],
-    github: "https://github.com/NandiniLovanshi/Myntra-Clone",
-    live: "https://myntra-clone-taupe-rho.vercel.app",
+    github: "https://github.com/NandiniLovanshi",
+    live: "#",
   },
 ];
 
+const Projects = () => {
   return (
     <section
       id="projects"
-      className="min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-white py-16 md:py-20 px-4 sm:px-6 lg:px-8 transition-all duration-500"
+      className="py-24 bg-white dark:bg-slate-900 transition-all duration-300"
     >
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto px-6">
 
         {/* Heading */}
-        <h2 className="text-2xl sm:text-3xl font-bold text-center mb-12">
-          My <span className="text-cyan-500 dark:text-cyan-400">Projects</span>
-        </h2>
+        <div className="text-center">
+          <h2 className="text-4xl font-bold text-black dark:text-white">
+            My <span className="text-pink-600">Projects</span>
+          </h2>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+          <p className="mt-4 text-gray-600 dark:text-gray-300">
+            Some of the projects I have built using modern web technologies.
+          </p>
+        </div>
+
+        {/* Project Cards */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
 
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-gray-100 dark:bg-slate-800 rounded-2xl overflow-hidden border border-cyan-400 shadow-lg hover:shadow-cyan-500/40 hover:-translate-y-2 transition-all duration-300"
+              className="bg-gray-100 dark:bg-slate-800 rounded-3xl overflow-hidden shadow-lg hover:-translate-y-3 hover:shadow-pink-500/40 hover:shadow-2xl transition-all duration-300"
             >
-              {/* Project Image */}
+
+              {/* Image */}
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-60 object-cover"
+                className="w-full h-56 object-cover"
               />
 
               {/* Content */}
               <div className="p-6">
 
-                <h3 className="text-2xl font-bold text-cyan-500 dark:text-cyan-400 mb-4">
+                <h3 className="text-2xl font-bold text-black dark:text-white">
                   {project.title}
                 </h3>
 
-                <p className="text-gray-700 dark:text-gray-300 leading-7 mb-5">
+                <p className="mt-4 text-gray-600 dark:text-gray-300 leading-7">
                   {project.description}
                 </p>
 
                 {/* Technologies */}
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {project.technologies.map((tech, i) => (
+                <div className="flex flex-wrap gap-2 mt-6">
+                  {project.technologies.map((tech) => (
                     <span
-                      key={i}
-                      className="bg-cyan-500 text-white px-3 py-1 rounded-full text-sm"
+                      key={tech}
+                      className="bg-pink-100 dark:bg-pink-600/20 text-pink-600 px-3 py-1 rounded-full text-sm font-medium"
                     >
                       {tech}
                     </span>
@@ -82,24 +90,26 @@ function Projects() {
                 </div>
 
                 {/* Buttons */}
-                <div className="flex gap-4 flex-wrap">
-
-                  <a
-                    href={project.live}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-3 rounded-lg font-semibold transition"
-                  >
-                    Live Demo
-                  </a>
+                <div className="flex gap-4 mt-8">
 
                   <a
                     href={project.github}
                     target="_blank"
-                    rel="noopener noreferrer"
-                    className="border-2 border-cyan-500 hover:bg-cyan-500 hover:text-white px-6 py-3 rounded-lg font-semibold transition"
+                    rel="noreferrer"
+                    className="flex-1 flex items-center justify-center gap-2 bg-gray-900 hover:bg-black text-white py-3 rounded-xl transition"
                   >
+                    <FaGithub />
                     GitHub
+                  </a>
+
+                  <a
+                    href={project.live}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex-1 flex items-center justify-center gap-2 bg-pink-600 hover:bg-pink-700 text-white py-3 rounded-xl transition"
+                  >
+                    <FaExternalLinkAlt />
+                    Live
                   </a>
 
                 </div>
@@ -114,6 +124,6 @@ function Projects() {
       </div>
     </section>
   );
-}
+};
 
 export default Projects;
