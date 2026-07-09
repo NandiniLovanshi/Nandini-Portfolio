@@ -6,7 +6,7 @@ const certifications = [
     organization: "Shanti Infosoft LLP",
     description: "AI / Web and App Design And Development Company Indore, India",
     year: "2026",
-    link: "/certificates/shanti-infosoft.pdf",
+    link: "/Internship.jpeg",
   },
   {
     title: "Web Development for Beginners",
@@ -14,16 +14,9 @@ const certifications = [
     description:
       "Successfully completed the Web Development for Beginners certification.",
     year: "2025",
-    link: "/certificates/web-development.pdf",
+    link: "/Web.pdf",
   },
-  {
-    title: "React Developer for Beginners",
-    organization: "Simplilearn",
-    description:
-      "Successfully completed the React Developer for Beginners certification.",
-    year: "2025",
-    link: "/certificates/react-developer.pdf",
-  },
+  
 ];
 
 const Certification = () => {

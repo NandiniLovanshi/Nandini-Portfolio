@@ -1,10 +1,8 @@
-
 import {
     FaGithub,
     FaLinkedin,
     FaEnvelope,
 } from "react-icons/fa";
-
 const Home = () => {
     return (
         <section
@@ -32,18 +30,14 @@ const Home = () => {
                         <p className="mt-6 text-gray-600 dark:text-white text-lg leading-8 max-w-xl transition-colors duration-300">
                             Passionate about building scalable applications.
                         </p>
-
                         {/* Buttons */}
-
                         <div className="mt-10 flex flex-wrap gap-4 justify-center md:justify-start">
-
                             <a
                                 href="#contact"
                                 className="bg-pink-600 hover:bg-pink-700 text-white px-8 py-3 rounded-full transition duration-300"
                             >
                                 Contact Me
                             </a>
-
                             <a
                                 href="/Resume.pdf"
                                 download="Resume.pdf"
@@ -51,13 +45,9 @@ const Home = () => {
                             >
                                 Download CV
                             </a>
-
                         </div>
-
                         {/* Social Icons */}
-
                         <div className="flex justify-center md:justify-start gap-5 mt-10">
-
                             <a
                                 href="https://github.com/NandiniLovanshi"
                                 target="_blank"
@@ -66,7 +56,6 @@ const Home = () => {
                             >
                                 <FaGithub />
                             </a>
-
                             <a
                                 href="https://www.linkedin.com/in/nandini-lovanshi-301462366"
                                 target="_blank"
@@ -75,39 +64,27 @@ const Home = () => {
                             >
                                 <FaLinkedin />
                             </a>
-
                             <a
                                 href="mailto:example@gmail.com"
                                 className="text-3xl text-gray-700 dark:text-white hover:text-pink-600 transition-all duration-300"
                             >
                                 <FaEnvelope />
                             </a>
-
                         </div>
-
                     </div>
-
                     {/* Right Side */}
-
                     <div className="flex-1 flex justify-center">
-
                         <div className="w-60 h-60 md:w-80 md:h-80 rounded-full overflow-hidden border-3 border-pink-500 shadow-[0_0_10px_#ec4899,0_0_40px_#ec4899] hover:scale-105 transition-all duration-500">
-
                             <img
                                 src="/profile.jpg"
                                 alt="Profile"
                                 className="w-full h-full object-cover"
                             />
-
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
         </section>
     );
 };
-
 export default Home;

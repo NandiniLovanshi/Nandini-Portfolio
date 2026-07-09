@@ -1,34 +1,18 @@
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const projects = [
-  
-
   {
-    title: "Myntra Clone",
-    image: "/projects/myntra.png",
-    description:
-      "A responsive Myntra-inspired e-commerce frontend featuring category navigation, product listings, and modern UI.",
-    technologies: [
-      "React.js",
-      "Tailwind CSS",
-      "JavaScript",
-    ],
-    github: "https://github.com/NandiniLovanshi",
-    live: "#",
-  },
-
-  {
-    title: "Portfolio Website",
-    image: "/projects/portfolio.png",
-    description:
-      "Personal portfolio showcasing my skills, education, experience, certifications and projects.",
-    technologies: [
-      "React.js",
-      "Tailwind CSS",
-    ],
-    github: "https://github.com/NandiniLovanshi",
-    live: "#",
-  },
+  title: "Portfolio Website",
+  image: "/public/portfolio.jpg",
+  description:
+    "A responsive personal portfolio showcasing my skills, education, experience, certifications, and projects.",
+  technologies: [
+    "React.js",
+    "Tailwind CSS",
+  ],
+  github: "https://github.com/NandiniLovanshi/Nandini-Portfolio",
+  live: "https://nandini-portfolio-omega.vercel.app/",
+},
 ];
 
 const Projects = () => {
