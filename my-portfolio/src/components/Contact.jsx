@@ -22,15 +22,15 @@ const Contact = () => {
         "sdi3lYRMrMAMpUkH4"
       )
       .then(
-        () => {
-          alert("✅ Message sent successfully!");
-          form.current.reset();
-        },
-        (error) => {
-          console.error(error);
-          alert("❌ Failed to send message.");
-        }
-      );
+  () => {
+    alert("✅ Message sent successfully!");
+    form.current.reset();
+  },
+  (error) => {
+    console.log("EmailJS Error:", error);
+    alert(error.text || error.message);
+  }
+);
   };
 
   return (
