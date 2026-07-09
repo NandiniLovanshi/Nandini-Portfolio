@@ -22,20 +22,20 @@ const Home = () => {
           {/* Left Side */}
           <div className="flex-1 text-center lg:text-left">
 
-            <p className="text-pink-600 font-semibold text-lg">
+            <p className="text-black font-semibold text-lg">
               Hello, I'm
             </p>
 
-            <h1 className="mt-3 text-5xl md:text-6xl font-extrabold text-gray-900 dark:text-white leading-tight">
+            <h1 className="mt-3 text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white leading-tight">
               Nandini
-              <span className="text-pink-600"> Lovanshi</span>
+              <span className="text-pink-500"> Lovanshi</span>
             </h1>
 
-            <h2 className="mt-6 text-2xl md:text-3xl font-semibold text-gray-700 dark:text-gray-300">
+            <h2 className="mt-6 text-2xl md:text-3xl font-semibold text-gray-700 dark:text-black">
               React Developer | Frontend Developer
             </h2>
 
-            <p className="mt-8 text-lg leading-8 text-gray-700 dark:text-gray-300 max-w-xl">
+            <p className="mt-8 text-lg leading-8 text-gray-700 dark:text-black max-w-xl">
               Passionate about building beautiful, responsive and user-friendly
               web applications using React.js, JavaScript and Tailwind CSS.
             </p>

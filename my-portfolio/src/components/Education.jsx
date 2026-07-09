@@ -45,7 +45,7 @@ const Education = () => {
             My <span className="text-black dark:text-white">Education</span>
           </h2>
 
-          <p className="mt-5 text-lg text-gray-700 dark:text-gray-300">
+          <p className="mt-5 text-lg text-gray-700 dark:text-black">
             My academic journey and achievements.
           </p>
         </div>

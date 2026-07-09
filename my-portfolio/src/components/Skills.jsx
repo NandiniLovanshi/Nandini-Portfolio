@@ -19,38 +19,66 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="py-24 bg-white dark:bg-slate-900 transition-all duration-300"
+      className="relative overflow-hidden py-24 bg-gradient-to-br from-[#f9d7df] via-[#f7cfd8] to-[#f5c8d2] dark:from-slate-800 dark:to-black transition-all duration-300"
     >
-      <div className="max-w-7xl mx-auto px-6">
+      {/* Background Blur */}
+      <div className="absolute -top-32 -left-32 w-80 h-80 bg-pink-300/30 rounded-full blur-3xl"></div>
+
+      <div className="absolute bottom-0 -right-20 w-96 h-96 bg-rose-300/30 rounded-full blur-3xl"></div>
+
+      <div className="relative max-w-7xl mx-auto px-6">
 
         {/* Heading */}
         <div className="text-center">
-          <h2 className="text-4xl font-bold text-black dark:text-white">
-            My <span className="text-pink-600">Skills</span>
+          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white">
+            My <span className="text-black dark:text-white">Skills</span>
           </h2>
 
-          <p className="mt-4 text-gray-600 dark:text-gray-300">
-            Technologies and tools I use to build modern web applications.
+          <p className="mt-5 text-lg text-gray-700 dark:text-black max-w-2xl mx-auto">
+            Technologies and tools I use to build modern, responsive and
+            scalable web applications.
           </p>
         </div>
 
         {/* Skills Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-8 mt-16">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 mt-20">
 
           {skills.map((skill) => (
             <div
               key={skill.name}
-              className="bg-gray-100 dark:bg-slate-800 rounded-2xl p-6 flex flex-col items-center shadow-lg hover:-translate-y-2 hover:shadow-pink-500/40 hover:shadow-xl transition-all duration-300"
+              className="
+                group
+                bg-[#fff7f9]
+                dark:bg-slate-900/80
+                backdrop-blur-xl
+                rounded-[30px]
+                border
+                border-pink-300
+                shadow-xl
+                hover:-translate-y-3
+                hover:shadow-[0_20px_60px_rgba(236,72,153,0.35)]
+                transition-all
+                duration-500
+                p-8
+                flex
+                flex-col
+                items-center
+              "
             >
-              <img
-                src={skill.image}
-                alt={skill.name}
-                className="w-16 h-16 object-contain"
-              />
+              {/* Skill Image */}
+              <div className="w-20 h-20 rounded-2xl overflow-hidden bg-white shadow-md p-3 group-hover:scale-110 transition duration-500">
+                <img
+                  src={skill.image}
+                  alt={skill.name}
+                  className="w-full h-full object-contain"
+                />
+              </div>
 
-              <h4 className="mt-4 text-center text-black dark:text-white font-medium">
+              {/* Skill Name */}
+              <h4 className="mt-6 text-lg font-semibold text-gray-900 dark:text-white text-center">
                 {skill.name}
               </h4>
+
             </div>
           ))}
 

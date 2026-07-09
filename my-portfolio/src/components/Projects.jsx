@@ -143,7 +143,7 @@ const Projects = () => {
 
         <div className="text-center">
           <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white">
-            My <span className="text-black">Projects</span>
+            My <span className="text-black dark:text-white">Projects</span>
           </h2>
 
           <p className="mt-5 text-lg text-gray-700 dark:text-black max-w-2xl mx-auto">

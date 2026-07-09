@@ -18,7 +18,7 @@ const Experience = () => {
             My <span className="text-black dark:text-white">Experience</span>
           </h2>
 
-          <p className="mt-5 text-lg text-gray-700 dark:text-gray-300">
+          <p className="mt-5 text-lg text-gray-700 dark:text-black">
             My professional journey and internship experience.
           </p>
         </div>

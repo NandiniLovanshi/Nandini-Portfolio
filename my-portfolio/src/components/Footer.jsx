@@ -111,7 +111,7 @@ const Footer = () => {
         <div className="w-full h-px bg-pink-300 mb-6"></div>
 
         {/* Copyright */}
-        <p className="text-center text-gray-700 dark:text-gray-300">
+        <p className="text-center text-gray-700 dark:text-black">
           © {new Date().getFullYear()}{" "}
           <span className="font-bold text-pink-600">
             Nandini Lovanshi
@@ -119,7 +119,7 @@ const Footer = () => {
           . All Rights Reserved.
         </p>
 
-        <p className="text-center text-sm text-gray-600 dark:text-gray-400 mt-2">
+        <p className="text-center text-sm text-gray-600 dark:text-black mt-2">
           Designed & Developed with ❤️ using React.js & Tailwind CSS
         </p>
 

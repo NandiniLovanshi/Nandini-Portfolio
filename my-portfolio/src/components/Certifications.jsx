@@ -38,7 +38,7 @@ const Certification = () => {
             My <span className="text-black dark:text-white">Certifications</span>
           </h2>
 
-          <p className="mt-5 text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
+          <p className="mt-5 text-lg text-gray-700 dark:text-black max-w-2xl mx-auto">
             Certifications that showcase my learning journey and technical
             expertise.
           </p>

@@ -51,7 +51,7 @@ const Contact = () => {
             Contact <span className="text-black dark:text-white">Me</span>
           </h2>
 
-          <p className="mt-5 text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
+          <p className="mt-5 text-lg text-gray-700 dark:text-black max-w-2xl mx-auto">
             Feel free to get in touch. I'm always open to discussing new
             opportunities and exciting projects.
           </p>
@@ -91,13 +91,13 @@ const Contact = () => {
                 <h4 className="font-semibold text-gray-900 dark:text-white">
                   Email
                 </h4>
-
                 <a
-                  href="mailto:lovanshinandini42@gmail.com"
+                  href="mailto:lovanshinandini42@gmail.com?subject=Portfolio%20Inquiry&body=Hello%20Nandini,"
                   className="text-gray-700 dark:text-gray-300 hover:text-pink-600"
                 >
                   lovanshinandini42@gmail.com
                 </a>
+
               </div>
             </div>
 
@@ -181,7 +181,7 @@ const Contact = () => {
 
               <input
                 type="text"
-                name="user_name"
+                name="name"
                 placeholder="Your Name"
                 required
                 className="w-full p-4 rounded-2xl border border-pink-300 bg-white outline-none focus:ring-2 focus:ring-pink-500"
@@ -189,7 +189,7 @@ const Contact = () => {
 
               <input
                 type="email"
-                name="user_email"
+                name="email"
                 placeholder="Your Email"
                 required
                 className="w-full p-4 rounded-2xl border border-pink-300 bg-white outline-none focus:ring-2 focus:ring-pink-500"
