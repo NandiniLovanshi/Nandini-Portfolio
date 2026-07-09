@@ -45,8 +45,8 @@ const Home = () => {
                             </a>
 
                             <a
-                                href="/resume.pdf"
-                                download="Nandini_Lovanshi_Resume.pdf"
+                                href="/Resume.pdf"
+                                download="Resume.pdf"
                                 className="border-2 border-pink-600 text-pink-600 hover:bg-pink-600 hover:text-white px-8 py-3 rounded-full transition duration-300"
                             >
                                 Download CV
