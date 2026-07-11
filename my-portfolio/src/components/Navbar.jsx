@@ -23,12 +23,12 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-xl bg-[#fff7f9]/80 dark:bg-slate-900/80 border-b border-pink-200 shadow-lg transition-all duration-300">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-16 sm:h-20">
 
           {/* Logo */}
-          <h1 className="text-3xl font-extrabold bg-gradient-to-r from-pink-500 to-rose-500 bg-clip-text text-transparent cursor-pointer">
+          <h1 className="text-2xl sm:text-3xl font-extrabold bg-gradient-to-r from-pink-500 to-rose-500 bg-clip-text text-transparent cursor-pointer">
             Portfolio
           </h1>
 
@@ -65,7 +65,7 @@ const Navbar = () => {
             {/* Dark Mode */}
             <button
               onClick={() => setDarkMode(!darkMode)}
-              className="w-11 h-11 rounded-full bg-white dark:bg-slate-800 border border-pink-300 shadow-md flex items-center justify-center hover:scale-110 transition-all"
+              className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white dark:bg-slate-800 border border-pink-300 shadow-md flex items-center justify-center hover:scale-110 transition-all"
             >
               {darkMode ? (
                 <FaSun className="text-yellow-400 text-xl" />
@@ -76,7 +76,7 @@ const Navbar = () => {
 
             {/* Mobile Button */}
             <button
-              className="lg:hidden w-11 h-11 rounded-full bg-white dark:bg-slate-800 border border-pink-300 shadow-md flex items-center justify-center"
+              className="lg:hidden w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white dark:bg-slate-800 border border-pink-300 shadow-md flex items-center justify-center"
               onClick={() => setMenuOpen(!menuOpen)}
             >
               {menuOpen ? (
@@ -92,7 +92,22 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {menuOpen && (
-          <div className="lg:hidden mt-3 mb-4 rounded-3xl bg-[#fff7f9] dark:bg-slate-900 border border-pink-200 shadow-xl p-5">
+          <div
+            className="
+  lg:hidden
+  mt-2
+  rounded-2xl
+  bg-[#fff7f9]
+  dark:bg-slate-900
+  border
+  border-pink-200
+  shadow-2xl
+  p-4
+  animate-in
+  slide-in-from-top-2
+  duration-300
+"
+          >
 
             <ul className="flex flex-col gap-3">
 
@@ -100,19 +115,24 @@ const Navbar = () => {
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    onClick={() => setMenuOpen(false)}
+                    onClick={() => {
+                      setMenuOpen(false);
+                    }}
                     className="
-                      block
-                      px-4
-                      py-3
-                      rounded-xl
-                      text-gray-800
-                      dark:text-white
-                      hover:bg-pink-500
-                      hover:text-white
-                      transition-all
-                      duration-300
-                    "
+block
+px-4
+py-3
+rounded-xl
+text-center
+text-base
+font-medium
+text-gray-800
+dark:text-white
+hover:bg-pink-500
+hover:text-white
+transition-all
+duration-300
+"
                   >
                     {link.name}
                   </a>

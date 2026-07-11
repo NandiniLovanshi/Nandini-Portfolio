@@ -2,6 +2,7 @@ const About = () => {
   return (
     <section
       id="about"
+      data-aos="fade-up"
       className="relative overflow-hidden py-24 bg-gradient-to-br from-[#f9d7df] via-[#f7cfd8] to-[#f5c8d2] dark:from-slate-800 dark:to-black transition-all duration-300"
     >
       {/* Background Blur */}
@@ -13,23 +14,24 @@ const About = () => {
 
         {/* Heading */}
         <div className="text-center">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white">
             About <span className="text-black dark:text-white">Me</span>
           </h2>
 
-          <p className="mt-5 text-lg text-gray-700 dark:text-black max-w-2xl mx-auto">
+          <p className="mt-4 text-sm sm:text-base md:text-lg text-gray-700 dark:text-black max-w-2xl mx-auto px-2">
             Get to know me, my background and what I enjoy building.
           </p>
         </div>
 
         {/* About Card */}
         <div
-          className="
-            mt-16
-            bg-[#fff7f9]
-            dark:bg-slate-900/80
+  data-aos="fade-up"
+  className="
+            mt-10 sm:mt-16
+            bg-white
+            dark:bg-slate-500/70
             backdrop-blur-xl
-            rounded-[30px]
+            rounded-[24px] sm:rounded-[30px]
             border
             border-pink-300
             shadow-xl
@@ -37,43 +39,35 @@ const About = () => {
             hover:shadow-[0_20px_60px_rgba(236,72,153,0.35)]
             transition-all
             duration-500
-            p-10
+            p-6 sm:p-10
             text-center
-          "
-        >
-          <p className="text-lg leading-9 text-gray-700 dark:text-gray-300">
+"
+>
+          <p className="text-sm sm:text-base md:text-lg leading-7 sm:leading-8 md:leading-9 text-gray-800 dark:text-gray-100">
 
-            I'm{" "}
-            <span className="font-bold text-pink-600">
-              Nandini Lovanshi
-            </span>
-            , an MCA student and{" "}
-            <span className="font-semibold text-pink-600">
-              React Developer
-            </span>{" "}
-            passionate about building responsive, scalable and user-friendly
-            web applications.
+  I'm a passionate{" "}
+  <span className="font-semibold text-black">
+    Frontend & React.js Developer
+  </span>{" "}
+  with a strong foundation in{" "}
+  <span className="font-semibold text-black">
+    HTML5, CSS3, JavaScript (ES6+), React.js, Tailwind CSS, React Router DOM,
+    REST APIs, Git, GitHub, Node.js, Express.js, and MongoDB
+  </span>
+  . I have completed my{" "}
+  <span className="font-semibold text-black">
+    Master of Computer Applications (MCA)
+  </span>{" "}
+  and enjoy building responsive, user-friendly, and modern web applications
+  with clean, reusable code.
 
-            <br />
-            <br />
+  <br />
 
-            I have hands-on experience with{" "}
-            <span className="font-semibold text-pink-600">
-              React.js, JavaScript, Tailwind CSS, Node.js, Express.js and
-              MongoDB
-            </span>
-            . I enjoy developing modern interfaces, creating reusable
-            components, integrating REST APIs, and writing clean, maintainable
-            code.
 
-            <br />
-            <br />
+  I'm always eager to learn new technologies, enhance my problem-solving
+  skills, and contribute to developing high-quality web applications.
 
-            My goal is to build high-quality applications that deliver an
-            excellent user experience while continuously learning new
-            technologies and best practices in web development.
-
-          </p>
+</p>
         </div>
 
       </div>
