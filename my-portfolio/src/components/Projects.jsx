@@ -10,6 +10,15 @@ const projects = [
     github: "https://github.com/NandiniLovanshi/Nandini-Portfolio",
     live: "https://nandini-portfolio-tqi8.vercel.app/",
   },
+  {
+    title: "School-Management-System",
+    image: "/School.png",
+    description:
+      "A school management system for managing students, teachers, and subjects.",
+    technologies: ["React.js", "Tailwind CSS", "Context API", "localStorage"],
+    github: "https://github.com/NandiniLovanshi/School-Management-System",
+    live: "https://school-management-system-swart-nine.vercel.app/"
+  }
 ];
 
 const Projects = () => {
