@@ -18,6 +18,24 @@ const projects = [
     technologies: ["React.js", "Tailwind CSS", "Context API", "localStorage"],
     github: "https://github.com/NandiniLovanshi/School-Management-System",
     live: "https://school-management-system-swart-nine.vercel.app/"
+  },
+  {
+    title: "AI Saas Landing Page",
+    image: "/Port.jpg",
+    description:
+"A modern AI SaaS Landing Page designed to showcase AI-powered services, product features, pricing plans, and encourage users to start a free trial or subscribe."
+      ,
+    technologies: ["React.js", "Tailwind CSS", "JavaScript"],
+    github: "https://github.com/NandiniLovanshi/AI_Saas_Landing_Page",
+    live: "https://ai-saas-landing-page-olive.vercel.app/",
+  },
+  {
+    title:"Restaurant Landing Page",
+    image:"/Rest.jpg",
+    description:"A modern and user-friendly landing page for a restaurant website, showcasing the restaurant's menu, services, and contact information.",
+    technologies: ["React.js", "Tailwind CSS", "JavaScript"],
+    github: "https://github.com/NandiniLovanshi/Restaurant-Landing-Page",
+    live: "https://restaurant-landing-page-psi-dun.vercel.app/"
   }
 ];
 
