@@ -21,7 +21,7 @@ const projects = [
   },
   {
     title: "AI Saas Landing Page",
-    image: "/Port.jpg",
+    image: "/AIFlow.png",
     description:
 "A modern AI SaaS Landing Page designed to showcase AI-powered services, product features, pricing plans, and encourage users to start a free trial or subscribe."
       ,
@@ -31,7 +31,7 @@ const projects = [
   },
   {
     title:"Restaurant Landing Page",
-    image:"/Rest.jpg",
+    image:"/Restaurant.png",
     description:"A modern and user-friendly landing page for a restaurant website, showcasing the restaurant's menu, services, and contact information.",
     technologies: ["React.js", "Tailwind CSS", "JavaScript"],
     github: "https://github.com/NandiniLovanshi/Restaurant-Landing-Page",
