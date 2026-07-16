@@ -1,15 +1,7 @@
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const projects = [
-  {
-    title: "Portfolio Website",
-    image: "/Port.jpg",
-    description:
-      "A responsive personal portfolio showcasing my skills, education, experience, certifications, and projects.",
-    technologies: ["React.js", "Tailwind CSS"],
-    github: "https://github.com/NandiniLovanshi/Nandini-Portfolio",
-    live: "https://nandini-portfolio-tqi8.vercel.app/",
-  },
+  
   {
     title: "School-Management-System",
     image: "/School.png",

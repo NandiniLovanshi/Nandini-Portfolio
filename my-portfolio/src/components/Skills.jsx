@@ -11,7 +11,6 @@ const skills = [
   { name: "Git", image: "/Git.jpg" },
   { name: "GitHub", image: "/GitHub.jpg" },
   { name: "VS Code", image: "/vs code.jpg" },
-  { name: "Postman", image: "/postman.jpg" },
   { name: "Vercel", image: "/Vercel.jpg" },
 ];
 
