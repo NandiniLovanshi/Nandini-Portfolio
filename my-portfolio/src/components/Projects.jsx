@@ -1,7 +1,14 @@
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const projects = [
-  
+  {
+    title: "Finance Bank Landing Page",
+    image: "/Finance.png",
+    description: "A finance bank landing page with a modern and responsive design.",
+    technologies: ["React.js", "Tailwind CSS", "Framer Motion"],
+    github: "https://github.com/NandiniLovanshi/Finance-Bank-Landing-Page",
+    live: "https://finance-bank-landing-page-two.vercel.app/",
+  },
   {
     title: "School-Management-System",
     image: "/School.png",
