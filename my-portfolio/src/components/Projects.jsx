@@ -2,21 +2,20 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const projects = [
   {
+    title: "Task-Manager Web",
+    image: "/Task.png",
+    description: "A task manager web application with a modern and responsive design.",
+    technologies: ["React.js", "MongoDB", "Node.js", "Express.js", "Tailwind CSS", "JavaScript"],
+    github: "https://github.com/NandiniLovanshi/Task-Manager",
+    live: "https://task-manager-ten-zeta-58.vercel.app/",
+  },
+  {
     title: "Finance Bank Landing Page",
     image: "/Finance.png",
     description: "A finance bank landing page with a modern and responsive design.",
     technologies: ["React.js", "Tailwind CSS", "Framer Motion"],
     github: "https://github.com/NandiniLovanshi/Finance-Bank-Landing-Page",
     live: "https://finance-bank-landing-page-two.vercel.app/",
-  },
-  {
-    title: "School-Management-System",
-    image: "/School.png",
-    description:
-      "A school management system for managing students, teachers, and subjects.",
-    technologies: ["React.js", "Tailwind CSS", "Context API", "localStorage"],
-    github: "https://github.com/NandiniLovanshi/School-Management-System",
-    live: "https://school-management-system-swart-nine.vercel.app/"
   },
   {
     title: "AI Saas Landing Page",

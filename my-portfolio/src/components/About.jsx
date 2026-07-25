@@ -47,7 +47,7 @@ const About = () => {
 
   I'm a passionate{" "}
   <span className="font-semibold text-black">
-    Frontend & React.js Developer
+    MERN Stack Developer and React Frontend Developer
   </span>{" "}
   with a strong foundation in{" "}
   <span className="font-semibold text-black">

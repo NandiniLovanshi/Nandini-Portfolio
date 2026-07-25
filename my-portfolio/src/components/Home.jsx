@@ -22,14 +22,14 @@ const Home = () => {
   className="flex-1 text-center lg:text-left"
 >
   {/* Name */}
-  <h1 className="mt-2 text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white leading-tight">
+  <h1 className="mt-2 text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white leading-tight">
     Nandini
-    <span className="text-pink-500"> Lovanshi</span>
+    <span className="text-black"> Lovanshi</span>
   </h1>
 
   {/* Heading */}
-  <h2 className="mt-3 text-lg sm:text-2xl md:text-3xl font-semibold text-gray-700 dark:text-black">
-    React Developer | Frontend Developer
+  <h2 className="mt-3 text-lg sm:text-xl md:text-2xl font-semibold text-gray-700 dark:text-black">
+    MERN Stack Developer | React Frontend Developer
   </h2>
 
   {/* Mobile Image */}
@@ -59,9 +59,9 @@ const Home = () => {
   </div>
 
   {/* Paragraph */}
-  <p className="mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-gray-700 dark:text-black max-w-xl mx-auto lg:mx-0">
+  <p className="mt-4 text-base sm:text-lg leading-7 sm:leading-8 text-gray-700 dark:text-black max-w-xl mx-auto lg:mx-0">
     Passionate about building beautiful, responsive and user-friendly web
-    applications using React.js, JavaScript and Tailwind CSS.
+    applications using React.js,MongoDB, Node.js, Express.js, JavaScript and Tailwind CSS.
   </p>
 
   {/* Buttons */}
@@ -91,8 +91,8 @@ const Home = () => {
     </a>
 
     <a
-      href="/Resume.pdf"
-      download="Resume.pdf"
+      href="/Nandini_Lovanshi.pdf"
+      download="Nandini_Lovanshi.pdf"
       className="
       px-6 sm:px-8
       py-2.5 sm:py-3
