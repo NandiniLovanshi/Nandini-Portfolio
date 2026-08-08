@@ -61,7 +61,7 @@ const Home = () => {
   {/* Paragraph */}
   <p className="mt-4 text-base sm:text-lg leading-7 sm:leading-8 text-gray-700 dark:text-black max-w-xl mx-auto lg:mx-0">
     Passionate about building beautiful, responsive and user-friendly web
-    applications using React.js,MongoDB, Node.js, Express.js, JavaScript and Tailwind CSS.
+    applications using React.js, MongoDB, Node.js, Express.js, JavaScript and Tailwind CSS.
   </p>
 
   {/* Buttons */}
@@ -91,8 +91,8 @@ const Home = () => {
     </a>
 
     <a
-      href="/Nandini_Lovanshi.pdf"
-      download="Nandini_Lovanshi.pdf"
+      href="/Nandini_Lovanshi_CV.pdf"
+      download="Nandini_Lovanshi_CV.pdf"
       className="
       px-6 sm:px-8
       py-2.5 sm:py-3

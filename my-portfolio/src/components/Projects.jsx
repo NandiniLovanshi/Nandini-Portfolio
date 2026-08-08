@@ -1,6 +1,15 @@
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const projects = [
+{
+    title: "Blogify – MERN Stack Blogging Website",
+    image: "/blog.png",
+    description: "A full-stack blogging website built using the MERN stack, allowing users to create, read, update, and delete blog posts.",
+    technologies: ["React.js", "MongoDB", "Node.js", "Express.js", "Tailwind CSS", "JavaScript"],
+    github: "https://github.com/NandiniLovanshi/Blogify",
+    live: "https://blogify-rouge-beta.vercel.app/",
+  },
+
   {
     title: "Task-Manager Web",
     image: "/Task.png",
@@ -9,24 +18,7 @@ const projects = [
     github: "https://github.com/NandiniLovanshi/Task-Manager",
     live: "https://task-manager-ten-zeta-58.vercel.app/",
   },
-  {
-    title: "Finance Bank Landing Page",
-    image: "/Finance.png",
-    description: "A finance bank landing page with a modern and responsive design.",
-    technologies: ["React.js", "Tailwind CSS", "Framer Motion"],
-    github: "https://github.com/NandiniLovanshi/Finance-Bank-Landing-Page",
-    live: "https://finance-bank-landing-page-two.vercel.app/",
-  },
-  {
-    title: "AI Saas Landing Page",
-    image: "/AIFlow.png",
-    description:
-"A modern AI SaaS Landing Page designed to showcase AI-powered services, product features, pricing plans, and encourage users to start a free trial or subscribe."
-      ,
-    technologies: ["React.js", "Tailwind CSS", "JavaScript"],
-    github: "https://github.com/NandiniLovanshi/AI_Saas_Landing_Page",
-    live: "https://ai-saas-landing-page-olive.vercel.app/",
-  },
+  
   {
     title:"Restaurant Landing Page",
     image:"/Restaurant.png",
